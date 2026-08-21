@@ -7,7 +7,8 @@
 
 ---
 
-<img width="1830" height="400" alt="cernunnos_logo_horizontal_white_purple" src="https://github.com/user-attachments/assets/8703da14-53f1-4a66-bd09-b7a20cf6fccf" />
+<img width="1830" height="400" alt="cernunnos_logo_horizontal_white_purple" src="https://github.com/user-attachments/assets/943bc24e-30a9-46b9-ad32-609e6fb2780f" />
+
 
 
 ## FR — Français
@@ -278,9 +279,15 @@ cp .env.example .env
 
 ## Screenshot
 
-<img width="300"  alt="Screenshot_20260820-172543" src="https://github.com/user-attachments/assets/7d9365b8-0e8a-4391-8f07-2a9def30a04e" />  <img width="300" alt="Screenshot_20260820-172623" src="https://github.com/user-attachments/assets/7bb233f2-501f-4940-9b28-4a6c7e46a893" />  <img width="300" alt="Screenshot_20260820-172636" src="https://github.com/user-attachments/assets/32661ea6-5c5e-4e0b-8eaa-2f0e9adbba62" />
+<img width="300" alt="Screenshot_20260820-172543" src="https://github.com/user-attachments/assets/c5de9e7b-8d2e-485a-956f-01ab97f7207c" />   <img width="300"  alt="Screenshot_20260820-172623" src="https://github.com/user-attachments/assets/0ad52d64-1d5b-43b3-8eb2-2563ae90aed0" />
 
-<img width="300"  alt="Screenshot_20260820-173017" src="https://github.com/user-attachments/assets/61f42020-bf41-4f28-9ba4-e07c90ed22a9" />  <img width="300" alt="Screenshot_20260820-173142" src="https://github.com/user-attachments/assets/ca41e7d9-e05a-4e1b-a4ae-b4cd982cdbfd" />
+<img width="300"  alt="Screenshot_20260820-172636" src="https://github.com/user-attachments/assets/f7b457d6-b933-435b-8351-13cd6f28ee05" />    <img width="300"  alt="Screenshot_20260820-173142" src="https://github.com/user-attachments/assets/46f2ca5e-674b-4ec7-b98d-a1651980050c" />
+
+<img width="300"  alt="Screenshot_20260820-173017" src="https://github.com/user-attachments/assets/30647e2c-299d-4bb0-b67e-165cdd3950ad" />
+
+
+
+
 
 
 
