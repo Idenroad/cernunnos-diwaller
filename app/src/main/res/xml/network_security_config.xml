@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Cleartext permitted for user-configured WebDAV on LAN.
+         Google Drive and Dropbox always use HTTPS APIs.
+         SFTP uses JSch (not affected by this config).
+         WebDavProvider validates at runtime that cleartext is only
+         used for private/LAN IP addresses. -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

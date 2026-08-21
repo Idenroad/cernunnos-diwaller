@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cernunnos Diwaller</string>
+    <string name="app_tagline">Le gardien de votre identité</string>
+    <string name="widget_quick_access_desc">Accès rapide à Cernunnos Diwaller</string>
+    <string name="widget_codes_title">Codes Cernunnos</string>
+    <string name="widget_config_title">Configuration du widget</string>
+    <string name="widget_config_desc">Choisissez quels codes TOTP afficher sur le widget de l\'écran d\'accueil.</string>
+    <string name="widget_config_mode">Mode d\'affichage</string>
+    <string name="widget_config_category">Catégorie</string>
+    <string name="widget_config_done">Terminé</string>
+    <string name="widget_mode_favorites">Favoris</string>
+    <string name="widget_mode_category">Catégorie</string>
+    <string name="widget_mode_all">Toutes les entrées</string>
+    <string name="uncategorized">Non classé</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Le gardien de votre identité</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Créer le coffre-fort</string>
+    <string name="onboarding_desc">Choisissez une passphrase pour chiffrer vos secrets TOTP.\nCette passphrase n\'est PAS stockée — si vous la perdez, vos secrets sont perdus.</string>
+    <string name="onboarding_passphrase">Passphrase (min 8)</string>
+    <string name="onboarding_confirm">Confirmer la passphrase</string>
+    <string name="onboarding_mismatch">Les passphrases ne correspondent pas</string>
+    <string name="onboarding_create">Créer le coffre-fort</string>
+    <string name="onboarding_choose_method">Créer votre coffre — choisissez une méthode</string>
+    <string name="onboarding_choose_method_desc">Votre coffre stocke vos secrets TOTP chiffrés. Choisissez comment le protéger. Cela ne peut pas être changé ensuite sans réinitialisation.</string>
+    <string name="onboarding_passphrase_method">Passphrase</string>
+    <string name="onboarding_passphrase_desc">Passphrase personnalisée (min 8 caractères). Portable entre appareils via export chiffré.</string>
+    <string name="onboarding_device_method">Code téléphone / Biométrie</string>
+    <string name="onboarding_device_desc">Utilise le verrouillage de l\'écran (PIN, schéma, empreinte). Lié à l\'appareil, non portable.</string>
+    <string name="onboarding_use_passphrase">Utiliser une passphrase</string>
+    <string name="onboarding_use_device">Utiliser le verrouillage téléphone</string>
+    <string name="onboarding_auth_desc">Confirmez votre verrouillage d\'écran pour créer le coffre-fort</string>
+    <string name="onboarding_no_device_credential">Aucun verrouillage d\'écran défini. Allez dans Paramètres → Sécurité pour définir un PIN/mot de passe.</string>
+
+    <!-- Onboarding feature highlights -->
+    <string name="onboarding_feature_secure_vault">Coffre-fort sécurisé</string>
+    <string name="onboarding_feature_secure_vault_desc">Vos secrets TOTP sont chiffrés avec AES-256 et Argon2id</string>
+    <string name="onboarding_feature_cloud_sync">Synchro cloud</string>
+    <string name="onboarding_feature_cloud_sync_desc">Sauvegarde vers Google Drive, Dropbox, WebDAV ou SFTP</string>
+    <string name="onboarding_feature_privacy">Confidentialité d\'abord</string>
+    <string name="onboarding_feature_privacy_desc">Aucun suivi, aucune télémétrie, captures d\'écran bloquées</string>
+    <string name="onboarding_skip">Passer</string>
+    <string name="onboarding_next">Suivant</string>
+    <string name="onboarding_get_started">Commencer</string>
+
+    <!-- Unlock -->
+    <string name="unlock_title">Déverrouiller le coffre-fort</string>
+    <string name="unlock_desc">Entrez votre passphrase pour déverrouiller</string>
+    <string name="unlock_passphrase">Passphrase</string>
+    <string name="unlock_button">Déverrouiller</string>
+
+    <!-- List -->
+    <string name="list_empty">Aucun compte</string>
+    <string name="list_empty_desc">Appuyez sur + pour ajouter un secret TOTP</string>
+    <string name="list_lock">Verrouiller</string>
+    <string name="list_settings">Paramètres</string>
+    <string name="list_filter_all">Tout</string>
+    <string name="list_filter_categories">Catégories</string>
+    <string name="list_filter_uncategorized">Sans catégorie</string>
+    <string name="list_filter_favorites">Favoris</string>
+    <string name="list_search">Rechercher…</string>
+    <string name="favorite_title">Favori</string>
+    <string name="favorite_add_msg">Ajouter %1$s aux favoris ?</string>
+    <string name="favorite_remove_msg">Retirer %1$s des favoris ?</string>
+    <string name="favorite_add">Ajouter aux favoris</string>
+    <string name="favorite_remove">Retirer des favoris</string>
+
+    <!-- Add -->
+    <string name="add_title">Ajouter un compte</string>
+    <string name="add_scan_desc">Scannez un QR code depuis Cernunnos ou tout service TOTP</string>
+    <string name="add_scan">Scanner le QR code</string>
+    <string name="add_manual">Saisie manuelle</string>
+    <string name="add_issuer">Émetteur (ex. Cernunnos)</string>
+    <string name="add_label">Libellé (ex. user@email.com)</string>
+    <string name="add_secret">Secret (Base32)</string>
+    <string name="add_secret_hex">Secret (Hex)</string>
+    <string name="add_digits">Chiffres</string>
+    <string name="add_period">Période (s)</string>
+    <string name="add_button">Ajouter</string>
+    <string name="add_back_scan">Retour au scan</string>
+    <string name="add_gallery">Importer depuis la galerie</string>
+    <string name="add_gallery_no_qr">Aucun QR code trouvé dans l\'image sélectionnée</string>
+    <string name="add_gallery_error">Échec de lecture de l\'image. Veuillez réessayer.</string>
+    <string name="add_category">Catégorie</string>
+    <string name="add_no_category">Sans catégorie</string>
+    <string name="add_type">Type</string>
+    <string name="add_counter">Compteur</string>
+    <string name="add_motp_pin">PIN (pour mOTP)</string>
+
+    <!-- Detail -->
+    <string name="detail_delete">Supprimer</string>
+    <string name="detail_delete_title">Supprimer l\'entrée</string>
+    <string name="detail_delete_msg">Supprimer %1$s ? Cette action est irréversible.</string>
+    <string name="detail_delete_confirm">Supprimer</string>
+    <string name="detail_cancel">Annuler</string>
+    <string name="detail_not_found">Entrée introuvable</string>
+    <string name="detail_algorithm">Algorithme : %1$s</string>
+    <string name="detail_digits_period">Chiffres : %1$d  Période : %2$ds</string>
+
+    <!-- Partage -->
+    <string name="share_title">Partager le TOTP</string>
+    <string name="share_warning">⚠ ATTENTION : les secrets TOTP sont confidentiels. N\'utilisez cette option qu\'en cas de nécessité (transfert sysadmin, succession, etc.). Le destinataire aura besoin de la passphrase pour importer.</string>
+    <string name="share_recipient">Courriel du destinataire (optionnel)</string>
+    <string name="share_passphrase">Passphrase de chiffrement (min 8)</string>
+    <string name="share_passphrase_hint">Transmettez cette passphrase au destinataire via un canal sécurisé séparé.</string>
+    <string name="share_passphrase_too_short">La passphrase doit faire au moins 8 caractères</string>
+    <string name="share_button">Partager le TOTP chiffré</string>
+    <string name="share_chooser">Partager via…</string>
+    <string name="no_app_to_share">Aucune application disponible pour cette action</string>
+    <string name="share_encrypted_document_chooser">Partager un document chiffré</string>
+    <string name="document_share_subject">Document chiffré Cernunnos : %1$s</string>
+    <string name="document_share_body">Document chiffré de Cernunnos. Utilisez le mot de passe pour le déchiffrer.</string>
+    <string name="share_email_subject">Cernunnos Diwaller - TOTP : %1$s</string>
+    <string name="share_email_body">Bonjour,\n\nVoici le fichier chiffré de l\'entrée « %1$s » pour Cernunnos Diwaller. Contactez-moi pour recevoir le mot de passe.\n\nImportation : Cernunnos Diwaller → Paramètres → Importer.</string>
+
+    <!-- Export -->
+    <string name="export_title">Exporter</string>
+    <string name="export_desc">Exporter tous les secrets TOTP chiffrés.\nL\'export est chiffré AES-256-GCM avec dérivation Argon2id.\nAucun texte en clair n\'est jamais écrit.</string>
+    <string name="export_passphrase">Passphrase d\'export (min 8)</string>
+    <string name="export_button">Générer l\'export chiffré</string>
+    <string name="export_aegis_desc">Exporter au format JSON Aegis Authenticator. Compatible avec l\'import Aegis.</string>
+    <string name="export_aegis_warning">Attention : cet export n\'est PAS chiffré. Gardez-le en sécurité.</string>
+    <string name="export_aegis_button">Exporter vers Aegis</string>
+    <string name="export_aegis_copy_hint">Copiez le JSON ci-dessous et importez-le dans Aegis :</string>
+
+    <!-- Export 2FAS -->
+    <string name="export_2fas_desc">Exporter au format JSON 2FAS Authenticator. Compatible avec l\'import 2FAS.</string>
+    <string name="export_2fas_warning">Attention : cet export n\'est PAS chiffré. Gardez-le en sécurité.</string>
+    <string name="export_2fas_button">Exporter vers 2FAS</string>
+    <string name="export_2fas_copy_hint">Copiez le JSON ci-dessous et importez-le dans 2FAS :</string>
+    <string name="export_plaintext_warning_title">Avertissement export plaintext</string>
+    <string name="export_plaintext_warning_msg">Les exports Aegis/2FAS contiennent les secrets en PLAINTEXT. Quiconque accède à ce fichier peut lire vos secrets TOTP. Continuer ?</string>
+    <string name="export_anyway">Exporter quand même</string>
+    <string name="export_result">Export chiffré (copiez pour sauvegarder) :</string>
+    <string name="export_qr_hint">Scannez ce QR code avec un autre appareil pour transférer</string>
+
+    <!-- Import -->
+    <string name="import_title">Importer</string>
+    <string name="import_desc">Collez une chaîne d\'export chiffrée ou choisissez un fichier pour importer les secrets TOTP.</string>
+    <string name="import_data">Données chiffrées</string>
+    <string name="import_pick_file">Choisir un fichier…</string>
+    <string name="import_passphrase">Passphrase</string>
+    <string name="import_button">Importer</string>
+    <string name="import_bitwarden">Importer depuis Bitwarden Authenticator</string>
+    <string name="import_bitwarden_desc">Collez le JSON ou CSV exporté depuis Bitwarden Authenticator</string>
+    <string name="import_bitwarden_format_hint">Le format est détecté automatiquement (JSON ou CSV).</string>
+    <string name="import_bitwarden_label">Bitwarden JSON ou CSV</string>
+    <string name="import_bitwarden_button">Importer Bitwarden</string>
+
+    <!-- Import Google Authenticator -->
+    <string name="import_google_desc">Importation depuis Google Authenticator. Collez l\'URI otpauth-migration:// exportée depuis Google Authenticator.</string>
+    <string name="import_google_steps">Étapes : Google Authenticator → trois points → Transférer des comptes → Exporter des comptes → scanner le QR avec un autre appareil → copier l\'URI otpauth-migration:// ci-dessous.</string>
+    <string name="import_google_label">URI otpauth-migration://</string>
+    <string name="import_google_button">Importer depuis Google Auth</string>
+
+    <!-- Import Aegis -->
+    <string name="import_aegis_desc">Importation depuis Aegis Authenticator. Supporte les exports en clair et chiffrés.</string>
+    <string name="import_aegis_hint">Dans Aegis : Paramètres → Exporter → choisir clair ou chiffré. Si chiffré, entrez la passphrase ci-dessous.</string>
+    <string name="import_aegis_label">Export JSON Aegis</string>
+    <string name="import_aegis_pass">Passphrase Aegis (si chiffré)</string>
+    <string name="import_aegis_button">Importer depuis Aegis</string>
+    <string name="import_2fas_desc">Importer depuis 2FAS Authenticator. Exportez sans chiffrement depuis 2FAS (Paramètres → Sauvegarde → Exporter sans mot de passe), puis choisissez le fichier .2fas ici.</string>
+    <string name="import_authy_desc">Importer depuis Authy. Utilisez un outil d\'export Authy tiers (ex. authy-export) pour produire un fichier JSON, puis choisissez-le ici.</string>
+    <string name="import_microsoft_desc">Importer depuis Microsoft Authenticator. Utilisez un outil d\'export tiers pour produire un fichier JSON, puis choisissez-le ici.</string>
+    <string name="import_freeotp_desc">Importer depuis FreeOTP / FreeOTP+. Exportez vos jetons en XML, puis choisissez le fichier ici.</string>
+    <string name="import_andotp_desc">Importer depuis andOTP. Exportez sans chiffrement depuis andOTP (Paramètres → Exporter → Texte brut), puis choisissez le fichier JSON ici.</string>
+    <string name="import_raivo_desc">Importer depuis Raivo OTP (iOS). Exportez vos entrées en JSON, puis choisissez le fichier ici.</string>
+    <string name="import_lastpass_desc">Importer depuis LastPass Authenticator. Exportez en CSV, puis choisissez le fichier ici.</string>
+    <string name="import_steam_desc">Importer le secret Steam Guard depuis un export JSON de Steam Desktop Authenticator. Note : Steam utilise un algorithme personnalisé — les codes peuvent ne pas correspondre à l\'app Steam. Gardez Steam Guard sur un appareil séparé.</string>
+    <string name="import_plain_desc">Importer depuis un fichier texte contenant une URI otpauth:// par ligne. Compatible avec WinAuth et les listes d\'URI génériques. Les lignes commençant par # sont ignorées.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_security">Sécurité</string>
+    <string name="settings_security_status">Statut de sécurité</string>
+    <string name="settings_crash_reports">Rapports de crash</string>
+    <string name="settings_crash_reports_desc">Rapports de crash suite à des fermetures inattendues. Aucun secret n\'est inclus.</string>
+    <string name="settings_flag_secure">FLAG_SECURE : Actif</string>
+    <string name="settings_flag_secure_off">FLAG_SECURE : Désactivé — captures autorisées</string>
+    <string name="settings_storage">Stockage : AES-256-GCM + Argon2id</string>
+    <string name="settings_network">Réseau : Hors ligne (aucune permission)</string>
+    <string name="settings_accessibility_none">Accessibilité : Aucun service détecté</string>
+    <string name="settings_accessibility_warn">⚠ Services d\'accessibilité détectés : %1$d</string>
+    <string name="settings_accessibility_desc">Certains services peuvent lire le contenu de l\'écran. Désactivez les services d\'accessibilité inconnus si vous ne leur faites pas confiance.</string>
+    <string name="settings_data">Données</string>
+    <string name="settings_export">Exporter</string>
+    <string name="settings_import">Importer</string>
+    <string name="settings_splash_anim">Animation de démarrage</string>
+    <string name="settings_splash_anim_desc">Jouer l\'animation Cernunnos au lancement de l\'app</string>
+    <string name="settings_language">Langue</string>
+    <string name="language_system">Système</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="settings_theme">Thème</string>
+    <string name="theme_dark">Sombre</string>
+    <string name="theme_light">Clair</string>
+    <string name="theme_system">Système</string>
+    <string name="settings_sort">Trier par</string>
+    <string name="sort_name">Nom</string>
+    <string name="sort_issuer">Émetteur</string>
+    <string name="sort_date">Date d\'ajout</string>
+    <string name="sort_favorites">Favoris en premier</string>
+    <string name="sort_manual">Manuel</string>
+    <string name="settings_view_mode">Mode d\'affichage</string>
+    <string name="view_mode_list">Liste</string>
+    <string name="view_mode_tiles">Tuiles</string>
+    <string name="view_mode_compact">Compact</string>
+    <string name="list_filter_advanced">Filtres avancés</string>
+    <string name="multiselect_title">Sélection multiple</string>
+    <string name="multiselect_selected">%1$d sélectionné(s)</string>
+    <string name="multiselect_select_all">Tout sélectionner</string>
+    <string name="multiselect_done">Terminé</string>
+    <string name="multiselect_export">Exporter</string>
+    <string name="multiselect_delete">Supprimer</string>
+    <string name="multiselect_category">Ajouter à une catégorie</string>
+    <string name="multiselect_delete_title">Supprimer les entrées</string>
+    <string name="multiselect_delete_msg">Supprimer %1$d entrée(s) ?</string>
+    <string name="multiselect_export_pass">Phrase secrète d\'export</string>
+    <string name="multiselect_export_button">Exporter</string>
+    <string name="settings_auto_backup">Sauvegarde automatique</string>
+    <string name="settings_auto_backup_desc">Sauvegarde chiffrée à chaque modification</string>
+    <string name="settings_auto_backup_pass">Passphrase de sauvegarde (min 8)</string>
+    <string name="settings_auto_lock">Verrouillage automatique</string>
+    <string name="settings_auto_lock_desc">Verrouiller après inactivité (secondes, 0 = désactivé)</string>
+    <string name="settings_biometric_unlock">Déverrouillage biométrique</string>
+    <string name="settings_biometric_unlock_desc">Autoriser le déverrouillage du coffre avec la biométrie de l\'appareil</string>
+    <string name="settings_biometric_unlock_requires_passphrase">Le coffre doit être initialisé avec une passphrase pour activer le déverrouillage biométrique</string>
+    <string name="settings_biometric_unlock_device_mode">Déverrouillage biométrique actif (mode identifiant de l\'appareil)</string>
+
+    <!-- Sauvegarde cloud -->
+    <string name="cloud_backup_title">Sauvegarde cloud</string>
+    <string name="cloud_backup_desc">Sauvegarde chiffrée vers WebDAV, Dropbox ou Google Drive. Les données sont chiffrées avant l\'envoi — seul le ciphertext quitte votre appareil.</string>
+    <string name="cloud_backup_pass">Passphrase de sauvegarde (min 8)</string>
+    <string name="cloud_backup_connect">Connecter &amp; activer</string>
+    <string name="cloud_backup_active">Sauvegarde cloud active</string>
+    <string name="cloud_backup_disable">Désactiver</string>
+    <string name="cloud_sync_desc">Sync auto depuis le cloud au déverrouillage</string>
+    <string name="cloud_backup_now">Sauvegarder maintenant</string>
+    <string name="cloud_sync_now">Synchroniser maintenant</string>
+    <string name="sync_new_entries">%1$d nouvelles entrées synchronisées</string>
+    <string name="sync_updated">%1$d mises à jour</string>
+    <string name="sync_conflicts">%1$d conflit(s) ignoré(s) — à résoudre manuellement</string>
+    <string name="sync_no_changes">Synchronisation terminée — aucune modification</string>
+    <string name="cloud_restore">Restaurer depuis le cloud</string>
+    <string name="cloud_provider_select">Choisir le fournisseur</string>
+    <string name="cloud_dropbox">Dropbox</string>
+    <string name="cloud_gdrive">Google Drive</string>
+    <string name="cloud_dropbox_auth_pending">En attente de la connexion Dropbox… Complétez la connexion dans votre navigateur.</string>
+    <string name="cloud_gdrive_auth_pending">En attente de la connexion Google… Complétez la connexion dans votre navigateur.</string>
+    <string name="cloud_webdav">WebDAV</string>
+    <string name="cloud_webdav_url">URL du serveur</string>
+    <string name="cloud_webdav_user">Nom d\'utilisateur</string>
+    <string name="cloud_webdav_pass">Mot de passe</string>
+    <string name="cloud_webdav_help">Compatible avec Nextcloud, ownCloud, Synology, Proton Drive, tout serveur WebDAV.</string>
+    <string name="cloud_sftp">SFTP</string>
+    <string name="cloud_sftp_host">Hôte</string>
+    <string name="cloud_sftp_port">Port</string>
+    <string name="cloud_sftp_user">Nom d\'utilisateur</string>
+    <string name="cloud_sftp_pass">Mot de passe</string>
+    <string name="cloud_sftp_path">Chemin distant</string>
+
+    <!-- Synchro P2P -->
+    <string name="p2p_title">Synchro Wi-Fi Direct</string>
+    <string name="p2p_settings_desc">Transfère des entrées TOTP chiffrées directement entre deux appareils via Wi-Fi Direct. Sans serveur, sans internet.</string>
+    <string name="p2p_open">Ouvrir le transfert P2P</string>
+    <string name="p2p_desc">Transférez des entrées TOTP chiffrées directement entre deux appareils. Sans serveur, sans internet. Les deux appareils doivent être sur le même réseau Wi-Fi Direct.</string>
+    <string name="p2p_passphrase">Passphrase de chiffrement (min 8)</string>
+    <string name="p2p_send">Envoyer</string>
+    <string name="p2p_receive">Recevoir</string>
+    <string name="p2p_discover">Découvrir les appareils</string>
+    <string name="p2p_devices_found">Appareils trouvés :</string>
+    <string name="p2p_connect_send">Connecter &amp; Envoyer</string>
+    <string name="p2p_listen">Écouter les entrants</string>
+    <string name="settings_categories">Catégories</string>
+    <string name="settings_categories_desc">Organisez vos entrées TOTP. Supprimer une catégorie ne supprime pas les entrées.</string>
+    <string name="settings_new_category">Nouvelle catégorie</string>
+    <string name="settings_add_category">Ajouter la catégorie</string>
+    <string name="settings_rename">Renommer</string>
+    <string name="settings_delete">Supprimer</string>
+    <string name="settings_cancel">Annuler</string>
+    <string name="settings_change_pass">Changer la passphrase</string>
+    <string name="settings_current_pass">Passphrase actuelle</string>
+    <string name="settings_new_pass">Nouvelle passphrase (min 8)</string>
+    <string name="settings_change_button">Changer la passphrase</string>
+    <string name="settings_allow_screenshots">Autoriser les captures d\'écran</string>
+    <string name="settings_not_recommended">Non recommandé</string>
+    <string name="settings_allow_screenshots_desc">L\'enregistrement d\'écran et les captures seront activés. Cela expose vos codes aux applications malveillantes et au shoulder-surfing.</string>
+    <string name="settings_tap_to_reveal">Taper pour révéler les codes</string>
+    <string name="settings_tap_to_reveal_desc">Les codes sont masqués par •••••• et ne s\'affichent qu\'au tap. Masquage automatique après 10 secondes. Empêche le shoulder-surfing.</string>
+    <string name="settings_version">Cernunnos Diwaller v%1$s</string>
+
+    <!-- Couleur dynamique (Material You) -->
+    <string name="settings_dynamic_color">Couleur dynamique (Material You)</string>
+    <string name="settings_dynamic_color_desc">Utiliser les couleurs du fond d\'écran (Android 12+)</string>
+
+    <!-- Paramètres du widget -->
+    <string name="settings_widget">Widget</string>
+    <string name="settings_widget_show">Afficher le widget de codes</string>
+    <string name="settings_widget_show_desc">Afficher les codes TOTP sur le widget de l\'écran d\'accueil</string>
+    <string name="settings_widget_mode">Mode du widget</string>
+    <string name="settings_widget_require_unlock">Exiger le déverrouillage de l\'app pour afficher les codes</string>
+    <string name="settings_widget_category">Catégorie du widget</string>
+    <string name="settings_widget_max_entries">Entrées max : %1$d</string>
+
+    <!-- Sélecteur d\'icône (détail) -->
+    <string name="detail_icon">Icône</string>
+    <string name="detail_icon_default">Par défaut (initiales)</string>
+    <string name="detail_change_icon">Changer l\'icône</string>
+    <string name="detail_custom_icon">Image personnalisée</string>
+    <string name="detail_icon_reset">Réinitialiser</string>
+    <string name="detail_icon_picker_title">Choisir une icône</string>
+
+    <!-- Renforcement de sécurité -->
+    <string name="security_root_warning_title">Root détecté</string>
+    <!-- Crash reporting -->
+    <string name="crash_title">Rapport de crash détecté</string>
+    <string name="crash_message">L\'application a planté de manière inattendue la dernière fois. %1$d rapport(s) de crash disponible(s).</string>
+    <string name="crash_privacy">Les rapports de crash contiennent uniquement la version de l\'app, le modèle d\'appareil et la trace d\'erreur. Aucun secret, phrase secrète ou code TOTP n\'est inclus.</string>
+    <string name="crash_share">Partager le rapport</string>
+    <string name="crash_share_chooser">Partager le rapport de crash</string>
+    <string name="crash_delete">Supprimer</string>
+    <string name="crash_later">Plus tard</string>
+    <string name="security_root_warning_msg">Cet appareil semble être rooté. Utiliser Cernunnos sur un appareil rooté augmente le risque d\'extraction des secrets. Continuer ?</string>
+    <string name="security_root_continue">Continuer</string>
+    <string name="security_root_exit">Quitter</string>
+
+    <!-- Confirmation restauration cloud -->
+    <string name="confirm_restore_title">Restaurer depuis le cloud ?</string>
+    <string name="confirm_restore_msg">Cela REMPLACERA toutes les entries locales par le backup cloud. Cette action est irréversible.</string>
+    <string name="confirm_restore">Restaurer</string>
+    <string name="cancel">Annuler</string>
+
+    <!-- Édition type/compteur entry -->
+    <string name="edit_type">Type</string>
+    <string name="edit_counter">Compteur</string>
+
+    <!-- Annuler suppression -->
+    <string name="undo_delete">Annuler</string>
+    <string name="entries_deleted">entrées supprimées</string>
+
+    <!-- Annuler modifications / validation -->
+    <string name="discard_changes">Annuler les modifications ?</string>
+    <string name="discard">Annuler</string>
+    <string name="keep_editing">Continuer l\'édition</string>
+    <string name="entry_deleted">Entrée supprimée</string>
+    <string name="error_digits">Les digits doivent être 6 ou 8</string>
+    <string name="error_period">La période doit être supérieure à 0</string>
+    <string name="error_issuer_empty">L\'émetteur ne peut pas être vide</string>
+    <string name="error_secret_invalid">Secret Base32 invalide</string>
+    <string name="error_counter_invalid">Le compteur doit être un nombre valide</string>
+    <string name="err_prepare">Échec de préparation : %1$s</string>
+    <string name="err_prepare_unlock">Échec de préparation du déverrouillage : %1$s</string>
+    <string name="msg_account_after_unlock">Le compte sera ajouté après le déverrouillage du vault</string>
+    <string name="msg_passphrase_changed">Phrase de passe modifiée</string>
+    <string name="msg_entry_added">Ajouté : %1$s</string>
+    <string name="msg_entries_imported">%1$d entrées importées</string>
+    <string name="msg_google_auth_imported">%1$d entrées importées depuis Google Authenticator</string>
+    <string name="msg_aegis_imported">%1$d entrées importées depuis Aegis</string>
+    <string name="msg_backup_restored">%1$d entrées restaurées depuis la sauvegarde</string>
+    <string name="msg_cloud_restored">%1$d entrées restaurées depuis le cloud</string>
+    <string name="msg_backing_up">Sauvegarde vers le cloud…</string>
+    <string name="msg_backup_uploaded">Sauvegarde envoyée : %1$s (%2$d entrées)</string>
+    <string name="msg_upload_failed">Échec de l\'envoi</string>
+    <string name="msg_no_cloud_backups">Aucune sauvegarde cloud trouvée</string>
+    <string name="msg_already_up_to_date">Déjà à jour (dernière sync : %1$s)</string>
+    <string name="err_upload_failed">Échec de l\'envoi — vérifiez l\'accès au provider</string>
+    <string name="err_dropbox_oauth_failed">Échec OAuth Dropbox</string>
+    <string name="err_google_oauth_failed">Échec OAuth Google</string>
+    <string name="err_sync_error">Erreur de sync : %1$s</string>
+    <string name="err_cloud_restore_failed">Échec de restauration cloud : %1$s</string>
+    <string name="err_no_cloud_backup">Aucune sauvegarde de documents trouvée dans le cloud</string>
+    <string name="err_cloud_download_failed">Échec du téléchargement de la sauvegarde cloud</string>
+    <string name="err_invalid_backup_format">Format de sauvegarde invalide</string>
+    <string name="msg_docs_restored">Documents restaurés depuis la sauvegarde cloud</string>
+    <string name="err_no_backup_found">Aucune sauvegarde trouvée dans le cloud</string>
+    <string name="err_hotp_overflow">Débordement du compteur HOTP — réinitialisation requise</string>
+    <string name="err_change_passphrase_failed">Échec : %1$s</string>
+
+    <!-- Documents vault -->
+    <string name="doc_title">Documents</string>
+    <string name="doc_back">Retour</string>
+    <string name="doc_lock">Verrouiller</string>
+    <string name="doc_open_cern">Ouvrir un fichier .cern chiffré</string>
+    <string name="settings_open_cern">Documents chiffrés (.cern)</string>
+    <string name="settings_open_cern_desc">Ouvrir et déchiffrer un fichier .cern reçu par email ou messagerie.</string>
+    <string name="settings_open_cern_button">Ouvrir un fichier .cern</string>
+    <string name="doc_add">Ajouter un document</string>
+    <string name="doc_create_vault">Créer le coffre Documents</string>
+    <string name="doc_create_vault_desc">Stockez des copies chiffrées de vos documents importants.\nPermis de conduire, passeport, cartes d\'assurance, etc.\nProtégé par un mot de passe séparé.</string>
+    <string name="doc_passphrase">Mot de passe (min 8 caractères)</string>
+    <string name="doc_passphrase_confirm">Confirmer le mot de passe</string>
+    <string name="doc_passphrase_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="doc_create">Créer le coffre</string>
+    <string name="doc_unlock_title">Déverrouiller les Documents</string>
+    <string name="doc_unlock_passphrase">Mot de passe Documents</string>
+    <string name="doc_unlock">Déverrouiller</string>
+    <string name="doc_empty">Aucun document</string>
+    <string name="doc_empty_hint">Appuyez sur + pour ajouter votre premier document</string>
+    <string name="doc_expiring_banner">%1$d expirés, %2$d expirent bientôt</string>
+    <string name="doc_expired_banner">%1$d document(s) expiré(s)</string>
+    <string name="doc_expiring_soon_banner">%1$d document(s) expirent dans 30 jours</string>
+    <string name="doc_exp_label">Exp : %1$s</string>
+    <string name="doc_recto_verso_badge">R/V</string>
+    <string name="doc_add_title">Ajouter un Document</string>
+    <string name="doc_cancel">Annuler</string>
+    <string name="doc_recto">Recto</string>
+    <string name="doc_verso">Verso</string>
+    <string name="doc_recto_verso_toggle">Recto et Verso (recto + verso)</string>
+    <string name="doc_title_label">Titre</string>
+    <string name="doc_title_placeholder">ex. Permis de conduire</string>
+    <string name="doc_type">Type</string>
+    <string name="doc_type_label">Type de document</string>
+    <string name="doc_has_expiration">A une date d\'expiration</string>
+    <string name="doc_month">Mois</string>
+    <string name="doc_year">Année</string>
+    <string name="doc_notes">Notes (optionnel)</string>
+    <string name="doc_save">Enregistrer le Document</string>
+    <string name="doc_camera">Appareil photo</string>
+    <string name="doc_gallery">Galerie</string>
+    <string name="doc_replace">Remplacer</string>
+    <string name="doc_remove">Retirer</string>
+    <string name="doc_crop_title">Recadrer l\'image</string>
+    <string name="doc_crop_cancel">Annuler</string>
+    <string name="doc_crop_rotate">Pivoter</string>
+    <string name="doc_crop_confirm">Confirmer le recadrage</string>
+    <string name="doc_detail_type">Type</string>
+    <string name="doc_detail_expiration">Expiration</string>
+    <string name="doc_detail_created">Créé le</string>
+    <string name="doc_detail_notes">Notes</string>
+    <string name="doc_share_encrypted">Partager chiffré</string>
+    <string name="doc_share_title">Partager chiffré</string>
+    <string name="doc_share_desc">Exporter \"%1$s\" sous forme de fichier chiffré.\nLe destinataire a besoin de ce mot de passe pour le déchiffrer.\nUtilisez un mot de passe que vous pouvez partager en toute sécurité.</string>
+    <string name="doc_share_passphrase">Mot de passe de partage</string>
+    <string name="doc_share_confirm">Confirmer</string>
+    <string name="doc_share_button">Partager</string>
+    <string name="doc_delete_title">Supprimer le Document</string>
+    <string name="doc_delete_msg">Supprimer \"%1$s\" ? Cette action est irréversible.</string>
+    <string name="doc_delete_button">Supprimer</string>
+    <string name="doc_type_driver_license">Permis de conduire</string>
+    <string name="doc_type_passport">Passeport</string>
+    <string name="doc_type_id_card">Carte d\'identité</string>
+    <string name="doc_type_insurance">Assurance</string>
+    <string name="doc_type_vehicle_reg">Carte grise</string>
+    <string name="doc_type_tax">Document fiscal</string>
+    <string name="doc_type_medical">Médical</string>
+    <string name="doc_type_other">Autre</string>
+    <string name="doc_msg_vault_created">Coffre Documents créé</string>
+    <string name="doc_msg_added">Document ajouté : %1$s</string>
+    <string name="doc_msg_updated">Document mis à jour</string>
+    <string name="doc_msg_deleted">Document supprimé</string>
+    <string name="doc_msg_imported">Document importé : %1$s</string>
+    <string name="doc_err_wrong_pass">Mot de passe incorrect</string>
+    <string name="doc_err_pass_too_short">Le mot de passe doit faire au moins 8 caractères</string>
+    <string name="doc_err_add_failed">Échec de l\'ajout du document : %1$s</string>
+    <string name="doc_err_update_failed">Échec de la mise à jour : %1$s</string>
+    <string name="doc_err_delete_failed">Échec de la suppression : %1$s</string>
+    <string name="doc_err_load_image">Échec du chargement de l\'image : %1$s</string>
+    <string name="doc_err_export_failed">Échec de l\'export</string>
+    <string name="doc_err_import_failed">Échec de l\'import — mot de passe incorrect ou données corrompues</string>
+    <string name="doc_err_create_vault">Échec de la création du coffre : %1$s</string>
+
+    <!-- Noms des mois -->
+    <string-array name="month_names">
+        <item>Janv</item>
+        <item>Févr</item>
+        <item>Mars</item>
+        <item>Avr</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juil</item>
+        <item>Août</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+
+    <!-- Descriptions de contenu (accessibilité) -->
+    <string name="cd_back">Retour</string>
+    <string name="cd_cernunnos">Cernunnos</string>
+    <string name="cd_documents">Documents</string>
+    <string name="cd_send_secure">Envoyer document sécurisé</string>
+
+    <!-- Decrypt .cern screen -->
+    <string name="decrypt_title">Déchiffrer .cern</string>
+    <string name="decrypt_password_label">Mot de passe</string>
+    <string name="decrypt_encrypted_file">Fichier .cern chiffré</string>
+    <string name="decrypt_enter_password">Entrez le mot de passe pour déchiffrer le document.</string>
+    <string name="decrypt_button">Déchiffrer</string>
+    <string name="decrypt_failed">Échec du déchiffrement</string>
+    <string name="cd_open">Ouvrir</string>
+    <string name="decrypting">Déchiffrement…</string>
+    <string name="decrypt_success">%1$d document(s) déchiffré(s)</string>
+    <string name="decrypt_save_all">Tout sauvegarder</string>
+    <string name="decrypt_finish">Terminer</string>
+    <string name="decrypt_no_app">Aucune app pour ouvrir %1$s</string>
+    <string name="decrypt_error">Erreur: %1$s</string>
+    <string name="decrypt_saved_cache">%1$d fichier(s) sauvegardé(s) dans le cache</string>
+    <string name="decrypt_temp_warning">⚠ Les fichiers déchiffrés sont dans le cache temporaire. Ils seront supprimés à la fermeture de l\'app.</string>
+    <string name="decrypt_file_too_large">Fichier trop volumineux (max 20MB)</string>
+    <string name="decrypt_cannot_read">Impossible de lire le fichier</string>
+
+    <!-- Envoi sécurisé -->
+    <string name="send_title">Envoyer document sécurisé</string>
+    <string name="send_desc">Assemblez des documents dans une enveloppe chiffrée et envoyez-la.</string>
+    <string name="send_add_file">Ajouter fichier</string>
+    <string name="send_take_photo">Prendre photo</string>
+    <string name="send_files_added">%1$d fichier(s) ajouté(s)</string>
+    <string name="send_no_files">Aucun fichier ajouté</string>
+    <string name="send_supported_formats">Supportés : PDF, JPG, WEBP, PNG, MD, CSV, TXT</string>
+    <string name="send_format">Format de sortie</string>
+    <string name="send_format_pdf">PDF compatible</string>
+    <string name="send_format_pdf_desc">S\'ouvre partout (banques, avocats, comptables)</string>
+    <string name="send_format_cern">Cernunnos .cern</string>
+    <string name="send_format_cern_desc">Sécurité maximale (AES-256-GCM + Argon2id). Nécessite l\'app Cernunnos.</string>
+    <string name="send_phone_number">Numéro de téléphone</string>
+    <string name="send_phone_or_manual">Ou entrez un numéro manuellement :</string>
+    <string name="send_phone_invalid">Entrez un numéro valide (au moins 7 chiffres)</string>
+    <string name="send_phone_placeholder">+33 6 12 34 56 78</string>
+    <string name="send_send_document">Envoyer le document</string>
+    <string name="send_start_over">Recommencer</string>
+    <string name="send_send_password">Envoyer le mot de passe</string>
+    <string name="send_back">Retour</string>
+    <string name="send_finish">Terminer</string>
+    <string name="send_password">Mot de passe</string>
+    <string name="send_password_desc">Partagez ce mot de passe via un canal différent du document</string>
+    <string name="send_generate_password">Générer</string>
+    <string name="send_password_too_short">Le mot de passe doit faire au moins 8 caractères</string>
+    <string name="send_password_channel">Envoyer le mot de passe par</string>
+    <string name="send_channel_sms">SMS</string>
+    <string name="send_channel_sms_desc">Recommandé — chiffré en transit</string>
+    <string name="send_channel_copy">Copier</string>
+    <string name="send_channel_email">Courriel</string>
+    <string name="send_channel_email_desc">Déconseillé — le courriel n\'est pas chiffré</string>
+    <string name="send_channel_email_warning">Le courriel n\'est pas chiffré. Le mot de passe pourrait être intercepté. Préférez SMS ou un canal sécurisé.</string>
+    <string name="send_pick_contact">Choisir contact</string>
+    <string name="send_build">Créer &amp; envoyer</string>
+    <string name="send_building">Création du document chiffré…</string>
+    <string name="send_success">Document chiffré prêt</string>
+    <string name="send_error">Échec : %1$s</string>
+    <string name="send_send_via">Envoyer le document par</string>
+    <string name="send_send_email">Courriel</string>
+    <string name="send_send_sms">SMS</string>
+    <string name="send_password_copied">Mot de passe copié — auto-effacement dans 30 secondes</string>
+    <string name="send_password_sent_sms">Mot de passe envoyé par SMS</string>
+    <string name="send_confirm_channels">Document par courriel, mot de passe par SMS — canaux différents ✓</string>
+    <string name="send_confirm_same_channel">⚠ Même canal pour le document et le mot de passe — déconseillé</string>
+    <string name="send_no_files_error">Ajoutez au moins un fichier d\'abord</string>
+    <string name="send_remove_file">Retirer</string>
+    <string name="send_file_label">Fichier : %1$s</string>
+    <string name="send_channel_label">Canal : %1$s</string>
+    <string name="send_chooser_document">Envoyer le document</string>
+    <string name="send_chooser_mms">Envoyer le document par MMS</string>
+    <string name="send_chooser_password">Envoyer le mot de passe</string>
+    <string name="send_no_email_app">Aucune application de courriel installée</string>
+    <string name="send_no_sms_app">Aucune application SMS installée</string>
+    <string name="send_no_mms_app">Aucune application SMS/MMS installée</string>
+    <string name="send_file_error">Erreur de fichier : %1$s</string>
+    <string name="send_sms_body">Mot de passe Cernunnos : %1$s</string>
+    <string name="send_email_subject">Mot de passe document Cernunnos</string>
+    <string name="send_email_body">Mot de passe : %1$s</string>
+    <string name="send_doc_sent">Document envoyé</string>
+    <string name="send_password_next_step">Maintenant, envoyez le mot de passe par un canal différent.</string>
+    <string name="send_both_sent">Document et mot de passe envoyés</string>
+    <string name="send_clipboard_clear_info">Le mot de passe copié sera effacé du presse-papier dans 30 secondes.</string>
+    <string name="send_channel_email_label">Courriel</string>
+    <string name="send_channel_sms_label">SMS/MMS</string>
+    <string name="decrypt_enter_password_error">Entrez un mot de passe</string>
+    <string name="p2p_not_initialized">Wi-Fi Direct non initialisé</string>
+    <string name="p2p_discovery_failed">Échec de la découverte : code %1$d</string>
+    <string name="p2p_connect_failed">Échec de la connexion : code %1$d</string>
+    <string name="p2p_invalid_device">Adresse d\'appareil invalide : %1$s</string>
+    <string name="p2p_handshake_failed">Échec du handshake : le pair n\'est pas un appareil Cernunnos</string>
+    <string name="p2p_send_failed">Échec de l\'envoi : %1$s</string>
+    <string name="p2p_receive_failed">Échec de la réception : %1$s</string>
+    <string name="filter_algorithm">Algorithme</string>
+    <string name="filter_digits">Chiffres</string>
+    <string name="filter_period">Période</string>
+    <string name="filter_type">Type</string>
+    <string name="export_passphrase_hint">Entrez un mot de passe pour chiffrer l\'export.</string>
+    <string name="cd_add">Ajouter</string>
+    <string name="cd_dismiss">Fermer</string>
+    <string name="cd_copy_code">Copier le code</string>
+    <string name="cd_move_up">Monter</string>
+    <string name="cd_move_down">Descendre</string>
+    <string name="cd_qr_code">QR Code</string>
+    <string name="cd_show_password">Afficher le mot de passe</string>
+    <string name="cd_hide_password">Masquer le mot de passe</string>
+    <string name="add_account">Ajouter un compte</string>
+    <string name="advanced_filters">Filtres avancés</string>
+    <string name="export_entries">Exporter %1$d entrées</string>
+    <string name="set_category">Définir la catégorie</string>
+    <string name="remove_from_category">Retirer de la catégorie</string>
+    <string name="category_updated">Catégorie mise à jour</string>
+    <string name="copied">Copié</string>
+    <string name="export_failed">Échec de l\'export</string>
+    <string name="save">Enregistrer</string>
+    <string name="next_code">Code suivant</string>
+    <string name="usage_stats">Statistiques d\'utilisation</string>
+    <string name="usage_never">Jamais consulté</string>
+    <string name="usage_frequent">Fréquemment utilisé</string>
+    <string name="usage_regular">Régulièrement utilisé</string>
+    <string name="usage_occasional">Occasionnellement utilisé</string>
+    <string name="last_viewed_never">Dernière consultation : jamais</string>
+    <string name="last_viewed_just_now">Dernière consultation : à l\'instant</string>
+    <string name="last_viewed_minutes_ago">Dernière consultation : il y a %1$d minutes</string>
+    <string name="last_viewed_hours_ago">Dernière consultation : il y a %1$d heures</string>
+    <string name="last_viewed_days_ago">Dernière consultation : il y a %1$d jours</string>
+    <string name="sent_successfully">Envoyé avec succès</string>
+
+    <!-- Libellés de champs et actions (détail/liste) -->
+    <string name="field_issuer">Émetteur</string>
+    <string name="field_label">Libellé</string>
+    <string name="field_secret_base32">Secret (Base32)</string>
+    <string name="field_algorithm">Algorithme</string>
+    <string name="field_digits">Chiffres (6 ou 8)</string>
+    <string name="field_period">Période (secondes)</string>
+    <string name="close">Fermer</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="done">Terminé</string>
+    <string name="export_copied_clipboard">Export copié dans le presse-papiers</string>
+
+    <!-- QR scanner / misc UI -->
+    <string name="qr_grant_permission">Accorder l\'autorisation</string>
+    <string name="retry">Réessayer</string>
+    <string name="qr_generate_failed">Échec de génération du QR code</string>
+
+    <!-- Messages d'erreur -->
+    <string name="err_passphrase_empty">La phrase secrète ne peut pas être vide</string>
+    <string name="err_passphrase_short">La phrase secrète doit faire au moins 8 caractères</string>
+    <string name="err_wrong_passphrase">Phrase secrète incorrecte</string>
+    <string name="err_wrong_passphrase_attempts">Phrase secrète incorrecte. %1$d tentatives restantes avant verrouillage.</string>
+    <string name="err_unlock_locked_out">Trop de tentatives échouées. Réessayez dans %1$d secondes.</string>
+    <string name="err_unlock_failed">Échec du déverrouillage</string>
+    <string name="err_vault_reset">Les données du vault étaient manquantes. Veuillez créer un nouveau vault ou restaurer depuis une sauvegarde.</string>
+    <string name="err_generic">L\'opération a échoué : %1$s</string>
+    <string name="err_invalid_qr">QR code invalide : %1$s</string>
+    <string name="err_invalid_otpauth">URI otpauth invalide : %1$s</string>
+    <string name="err_invalid_secret">Secret invalide : %1$s</string>
+    <string name="err_export_pass_short">Phrase secrète d\'export trop courte (min 8)</string>
+    <string name="err_export_failed">Échec de l\'export : %1$s</string>
+    <string name="err_import_failed">Échec de l\'import : %1$s</string>
+    <string name="err_bitwarden_import_failed">Échec import Bitwarden : %1$s</string>
+    <string name="err_google_auth_import_failed">Échec import Google Auth : %1$s</string>
+    <string name="err_aegis_import_failed">Échec import Aegis : %1$s</string>
+    <string name="err_wrong_current_passphrase">Phrase secrète actuelle incorrecte</string>
+    <string name="err_new_passphrase_short">Nouvelle phrase secrète trop courte (min 8)</string>
+    <string name="err_restore_failed">Échec de la restauration : %1$s</string>
+    <string name="err_local_backup_failed">Échec sauvegarde locale : %1$s</string>
+    <string name="err_cloud_backup_error">Erreur sauvegarde cloud : %1$s</string>
+    <string name="err_cloud_not_enabled">Sauvegarde cloud non activée — reconnectez le fournisseur</string>
+    <string name="err_no_backup_passphrase">Aucune phrase secrète de sauvegarde définie</string>
+    <string name="err_no_cloud_provider">Aucun fournisseur cloud configuré</string>
+    <string name="err_cloud_auth_failed">Échec authentification cloud — reconnectez le fournisseur</string>
+    <string name="err_cloud_upload_failed">Échec upload cloud — vérifiez les identifiants</string>
+    <string name="err_secure_storage_unavailable">Stockage sécurisé indisponible — fonctionnalités cloud désactivées</string>
+    <string name="err_cloud_backup_not_enabled">La sauvegarde cloud n\'est pas activée</string>
+    <string name="err_cloud_auth_failed_short">Échec de l\'authentification cloud</string>
+    <string name="err_download_failed">Échec du téléchargement de la sauvegarde cloud</string>
+    <string name="err_sync_failed">Échec sync pendant l\'import : %1$s</string>
+    <string name="err_sync_partial_failure">Échec partiel sync cloud — certaines entrées non mises à jour</string>
+</resources>

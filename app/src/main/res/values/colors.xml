@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cernunnos_bg">#0D0D1A</color>
+    <color name="cernunnos_bg_card">#14142A</color>
+    <color name="cernunnos_violet">#7D07F8</color>
+    <color name="widget_bg">#0D0D1A</color>
+    <color name="widget_text">#E8E8FF</color>
+</resources>

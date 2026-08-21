@@ -1,0 +1,33 @@
+# Environment variables — contains private API keys
+.env
+
+# Audit documentation — internal only, not versioned
+AUDITS_NON_COUVERTS.md
+AUDIT_ROBUSTESSE.md
+RAPPORT_CONCURRENCE.md
+AUDIT_GLOBAL.md
+kimi.md
+
+# Gradle
+.gradle/
+build/
+.kotlin/
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+local.properties
+
+# Keystore
+*.jks
+*.keystore
+
+# OS
+.DS_Store
+Thumbs.db

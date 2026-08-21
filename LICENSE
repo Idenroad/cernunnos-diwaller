@@ -1,0 +1,48 @@
+Cernunnos Diwaller - Additional Terms (GPLv3 Section 7)
+
+Copyright (C) 2024-2026 idenroad - Cernunnos Diwaller Project
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+=======================================================================
+
+ADDITIONAL TERMS (permitted under GPLv3 Section 7(b))
+
+1. FREE OF CHARGE
+   This software is provided free of charge. You may not sell, rent,
+   or lease this software, nor charge any fee for access to or use
+   of this software, except to cover the reasonable cost of
+   distribution (e.g., physical media, bandwidth).
+
+2. NON-COMMERCIAL USE
+   Commercial use of this software, including but not limited to
+   integration into commercial products or services, use as part of
+   a paid offering, or use to generate revenue through advertising,
+   subscriptions, or any other monetization mechanism, requires
+   express written permission from the copyright holder.
+
+3. ATTRIBUTION
+   Any redistribution, modification, or derivative work must:
+
+   (a) Include clear and visible attribution to the Cernunnos
+       Project in the source code header files and documentation.
+   (b) Display the original project URL
+       (https://github.com/idenroad/cernunnos-diwaller) in the about screen
+       or equivalent location.
+
+
+These additional terms apply in addition to the GPLv3. Where there
+is a conflict between GPLv3 and these terms, these terms prevail
+for the specific provisions mentioned above. All other GPLv3
+rights and obligations remain in full force.
